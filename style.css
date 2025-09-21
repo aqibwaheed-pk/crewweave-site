@@ -1,0 +1,125 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #ffffff;
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background: #000;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo {
+  height: 70px;
+  width: auto;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+main {
+  flex: 1;
+  padding: 40px;
+  text-align: center;
+}
+
+.tagline {
+  font-size: 1.2em;
+  color: #555;
+  margin-top: 10px;
+}
+
+.pricing-table {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.plan {
+  border: 1px solid #ddd;
+  padding: 20px;
+  width: 200px;
+  background: #f9f9f9;
+  border-radius: 5px;
+}
+
+.plan h2 {
+  margin: 0 0 10px;
+}
+
+.price {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #27ae60;
+}
+
+.center-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.coming-soon-btn {
+  padding: 16px 40px;
+  font-size: 1.2rem;
+  background: #A6C35A;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: not-allowed;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  font-weight: bold;
+}
+
+footer {
+  background: #000;
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+}
+
+
+/* ===== LIST STYLING ===== */
+ul {
+  margin: 1em auto;          /* consistent spacing */
+  padding-left: 1.5em;       /* indent for bullets */
+  max-width: 800px;          /* keeps lists centered and neat */
+  text-align: left;          /* left-align inside your centered <main> */
+  list-style-type: disc;     /* simple round bullets */
+}
+
+ul li {
+  margin: 0.4em 0;           /* spacing between items */
+  line-height: 1.6;          /* improve readability */
+  font-size: 1rem;           /* same as normal text */
+  color: #333;
+}
+
+/* Optional: CrewWeave styled bullets */
+ul li::marker {
+  color: #A6C35A;            /* matches your brand green */
+  font-size: 1.2em;          /* slightly larger bullet */
+}
